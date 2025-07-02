@@ -12,16 +12,93 @@
         <link href="https://fonts.googleapis.com/css2?family=Honk&family=Permanent+Marker&display=swap" rel="stylesheet">
     </head>
     <body>
+    h1 {
+    text-align: center;
+    }
+
+    h2 {
+    text-align: left;
+    }
+    div {
+    text-align: justify;
+    }
+    h3 {
+        text-align: right;    
+        p.a {
+    text-align-last: right;
+    }
+
+    p.b {
+    text-align-last: center;
+    }
+
+    p.c {
+    text-align-last: justify;
+    }
+        p {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    }
+    img.a {
+  vertical-align: baseline;
+    }
+
+    img.b {
+    vertical-align: text-top;
+    }
+
+    img.c {
+    vertical-align: text-bottom;
+    }
+
+    img.d {
+    vertical-align: sub;
+    }
+
+    img.e {
+    vertical-align: super;
+    }
+    div.a {
+  line-height: normal;
+div.a {
+  line-height: normal;
+    }
+
+    div.b {
+    line-height: 1.6;
+    }
+
+    div.c {
+    line-height: 80%;
+    }
+
+    div.d {
+    line-height: 200%;
+    }
+    <br />
+    <button onclick="toggle();">Toggle style</button>
+
+    <script>
+    let toggle = () => {
+        let element = document.getElementById("mystrong");
+
+        if (element.style.color === "teal") {
+        element.style.color = "tomato";
+        } else {
+        element.style.color = "teal";
+        }
+    }
+    </script>
+
         <!-- CTRL + / to comment highlighted text -->
         <!-- My website is going to be about a Fitness-and-Wellness
         blog -->
         <header>
             <h1>fitness and wellness</h1>
-            <img src="https://example.com/images/sample.jpg" alt="Sample Image">
             <img src="images/fitness-and-wellness.jpg" alt="fitness-and-wellness"
             width="500"
-            height="400"
-            <a href="page.html">Linkhttps://www.bing.com/images/search?q=&view=detailv2&id=D69FF21F83998D402E5D6CDC11A7D877749E0681&ccid=m4Alc19o&iss=fav&FORM=SVIM01&idpview=singleimage&mediaurl=https%253a%252f%252fwww.nifs.org%252fhs-fs%252fhubfs%252fGettyImages-627455550-%255bConverted%255d-new.jpg%253fwidth%253d1005%2526name%253dGettyImages-627455550-%255bConverted%255d-new.jpg&expw=800&exph=800&thid=OIP.m4Alc19oLby8XdgODA1NDQHaHa&idpbck=1</a>
+            height="400">
+            <a href="https://www.bing.com/images/search?q=&view=detailv2&id=D69FF21F83998D402E5D6CDC11A7D877749E0681&ccid=m4Alc19o&iss=fav&FORM=SVIM01&idpview=singleimage&mediaurl=https%253a%252f%252fwww.nifs.org%252fhs-fs%252fhubfs%252fGettyImages-627455550-%255bConverted%255d-new.jpg%253fwidth%253d1005%2526name%253dGettyImages-627455550-%255bConverted%255d-new.jpg&expw=800&exph=800&thid=OIP.m4Alc19oLby8XdgODA1NDQHaHa&idpbck=1">This is the link to the image</a>
             <a href="https://example.com" target="_blank">Visit Example</a>
             <div id="about"></div>
         </header>

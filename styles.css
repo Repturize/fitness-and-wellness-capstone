@@ -13,3 +13,42 @@ h1 {
 span {
     color: darkgray;
 }
+
+h2 {
+     font: size 40px; 
+     color:  blue;
+}
+
+li {
+    font-size:medium;
+    color:gold;
+}
+
+p {
+    font-size: large;
+    color: silver;
+}
+
+h3 {
+    font-size: large;
+    color: teal;
+}
+
+element:state {
+    /* CSS rules go here */
+}
+
+parent child {
+    /* CSS rules here */
+}
+
+footer {
+    font-size: 13px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.content-box {}
+
